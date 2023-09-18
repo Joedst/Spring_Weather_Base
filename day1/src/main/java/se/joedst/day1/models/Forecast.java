@@ -2,10 +2,14 @@ package se.joedst.day1.models;
 
 import java.util.UUID;
 
+
+
 public class Forecast {
-private UUID id;
-private int date; //20230821
-private int hour;
+    private UUID id;
+    private int date; //20230821
+    private int hour;
+
+    private float temperature;
 
     public UUID getId() {
         return id;
@@ -38,7 +42,4 @@ private int hour;
     public void setTemperature(float temperature) {
         this.temperature = temperature;
     }
-
-    private float temperature;
-
 }
